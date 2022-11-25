@@ -624,7 +624,6 @@ function swapHeadAndTail(arr) {
   if (arr.length % 2 !== 0) {
     const midle = arr.splice(half, 1);
     res = res.concat(arr.slice(half), midle, arr.slice(0, half));
-    console.log(midle);
   } else {
     res = res.concat(arr.slice(half), arr.slice(0, half));
   }
